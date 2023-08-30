@@ -61,12 +61,12 @@ for (int i = 0; i < list; i++)
 
 }
 std::ofstream new_city_list("out.txt");
-
+new_city_list << list;
 for (int i = 0; i < list; i++)
 
 {
    
-    new_city_list << "\n\t" << location[i].get_city()  << ", " << location[i].get_street() << ", " << location[i].get_house() << ", " << location[i].get_flat_number() << std::endl;
+    new_city_list  << "\n\t" << location[i].get_city()  << ", " << location[i].get_street() << ", " << location[i].get_house() << ", " << location[i].get_flat_number() << std::endl;
     
 
 
