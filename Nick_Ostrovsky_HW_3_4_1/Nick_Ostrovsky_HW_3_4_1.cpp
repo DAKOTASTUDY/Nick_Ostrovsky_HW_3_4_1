@@ -25,11 +25,10 @@ public:
 };
 int main()
 {
-    int list  = 5;
-    Flat* location = new Flat [list] ;
+    int list = 1;
+
     
-    location[1].set_city("Penza");
-std::cout << location[1].get_city();
+
 std::ifstream city_list("in.txt");
 if (city_list.is_open())
 {
@@ -42,6 +41,7 @@ else
     return (-1);
 }
 city_list >> list;
+Flat* location = new Flat[list];
 for (int i = 0; i < list; i++)
 
 {
@@ -60,9 +60,10 @@ for (int i = 0; i < list; i++)
         
 
 }
+
 std::ofstream new_city_list("out.txt");
 new_city_list << list;
-for (int i = 0; i < list; i++)
+for (int i = list -1; i >= 0; i--)
 
 {
    
