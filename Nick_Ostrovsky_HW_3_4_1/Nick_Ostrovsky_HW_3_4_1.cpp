@@ -26,9 +26,7 @@ public:
 int main()
 {
     int list = 1;
-
-    
-
+  
 std::ifstream city_list("in.txt");
 if (city_list.is_open())
 {
